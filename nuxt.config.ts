@@ -14,7 +14,7 @@ export default defineNuxtConfig({
   site: {
     url: 'https://alifnuryana.pages.dev',
     name: 'Alif Nuryana',
-    description: 'Personal blog of Alif Nuryana',
+    description: 'Personal Website of Alif Nuryana 🤙',
     lang: 'id',
   },
 })
