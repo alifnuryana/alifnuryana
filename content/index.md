@@ -3,13 +3,13 @@ title: Beranda
 description: Halo! Saya adalah T-Shaped Software Engineer dengan keahlian di Modern Web Development, Software Architecture, Cloud-Native, dan DevOps. Lihat proyek saya di Sankuriang Labs.
 ---
 
-# Haloo! 👋
+## Hey! 👋
 
-Saya adalah **T-Shaped Software Engineer** dengan deep expertise di **Modern Web Development (TypeScript & Ekosistem JS)** dan broad understanding di **Software Architecture, Cloud-Native, dan DevOps**. Semua pekerjaan freelance dan konsultasi yang saya kerjakan di **Sankuriang Labs**. Filosofi saya adalah membangun sistem yang tidak hanya berfungsi, tetapi juga **maintainable, secure, dan cost-effective** melalui adopsi praktik terbaik seperti **Infrastructure as Code (IaC)** dan **CI/CD** yang solid.
+Saya adalah **Full-Stack Software Architect** dengan spesialisasi mendalam dalam membangun dan mengoptimalkan aplikasi web _scalable_ menggunakan **Modern JavaScript dan TypeScript**. Fokus utama saya adalah transisi dari ide konseptual menjadi produk yang **berkinerja tinggi dan stabil**. Keahlian inti saya terletak pada _stack_ teknologi mutakhir, mulai dari _frontend_ yang reaktif menggunakan **Vue/Nuxt.js** hingga merancang _backend_ yang efisien, _type-safe_, dan siap untuk lingkungan produksi. Filosofi saya adalah menerapkan pendekatan yang **teknis, langsung, dan data-driven**.
 
-Fokus utama saya adalah mentransformasi ide kompleks menjadi produk digital yang **applicable** dan **efisien**. Saya terbiasa bekerja di seluruh software lifecycle, mulai dari system design awal hingga deployment dan performance testing pasca-produksi. Keahlian inti mencakup arsitektur **Serverless** (AWS/GCP), Frontend berbasis **Vue/Nuxt.js**, dan Backend berbasis **Node.js/TypeScript**—selalu mengutamakan type safety untuk memitigasi risiko di skala besar. Anda dapat melihat bagaimana pendekatan ini saya terapkan di berbagai [Projects](/projects).
+Sebagai _T-shaped engineer_, saya mengelola seluruh spektrum pengembangan, dari detail _front-end_ hingga optimasi infrastruktur. Saya sangat fokus pada integrasi **Cloud-Native dan Serverless Architectures** untuk mencapai efisiensi operasional tertinggi, didukung oleh penguasaan **DevOps Practices (CI/CD) dan Infrastructure as Code (IaC)**. Saya memanfaatkan **Sankuriang Labs** sebagai **platform operasional** tempat saya menangani berbagai proyek dan pengalaman klien, yang berfungsi sebagai _proving ground_ untuk **memvalidasi arsitektur modern** dan mengaplikasikan _best practices_ teknis secara nyata. Ini memastikan bahwa setiap solusi yang saya tawarkan sudah teruji di lapangan dan siap untuk tantangan bisnis yang sesungguhnya.
 
-Sebagai final-year student dengan pengalaman freelance yang kuat, saya selalu mencari tantangan teknis baru. Jika Anda memiliki proyek yang membutuhkan **solusi teknis yang matang** atau ingin berkolaborasi dalam area **Cloud/DevOps**, saya sangat terbuka untuk berdiskusi.
+Nilai yang saya bawa adalah sintesis antara kedalaman _coding_ spesialis dan pemahaman arsitektur yang luas, memungkinkan saya untuk memberikan **solusi terintegrasi dan _future-proof_**. Jika Anda mencari seorang _engineer_ yang mampu merancang, membangun, dan mengoptimalkan sistem secara holistik—dengan keahlian yang teruji melalui beragam proyek—mari kita diskusikan bagaimana keahlian teknis ini dapat meningkatkan proyek Anda. [Lihat Studi Kasus Teknis Saya](/projects) untuk meninjau secara langsung arsitektur dan hasil terukur yang telah saya wujudkan.
 
 ::quick-links
 ::

@@ -29,13 +29,6 @@
     >
       /tulisan
     </NuxtLink>
-    <NuxtLink
-      to="/contact"
-      class="underline"
-      active-class="font-bold"
-    >
-      /kontak
-    </NuxtLink>
   </div>
 </template>
 

@@ -6,7 +6,8 @@ export default defineAppConfig({
     },
   },
   links: [
-    { url: 'https://github.com/alifnuryana', icon: 'logos:github-icon' },
-    { url: 'https://www.linkedin.com/in/alifnuryana/', icon: 'logos:linkedin-icon' },
+    { url: 'https://github.com/alifnuryana', icon: 'simple-icons:github' },
+    { url: 'https://www.linkedin.com/in/alifnuryana/', icon: 'simple-icons:linkedin' },
+    { url: 'mailto:alifnuryana@gmail.com', icon: 'simple-icons:gmail' },
   ],
 })
