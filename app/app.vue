@@ -2,7 +2,10 @@
   <UApp>
     <NuxtRouteAnnouncer />
     <NuxtLayout>
-      <NuxtLoadingIndicator />
+      <NuxtLoadingIndicator
+        :height="5"
+        color="primary"
+      />
       <NuxtPage />
     </NuxtLayout>
   </UApp>
