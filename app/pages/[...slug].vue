@@ -12,8 +12,16 @@
 
 <script lang="ts" setup>
 const route = useRoute()
-const { data: page } = await useAsyncData(`page-${route.params.slug}`, async () => {
-  return await queryCollection('content').path(route.params.slug).first()
+const { data: page } = await useAsyncData(`page-${route.path}`, async () => {
+  return await queryCollection('content').path(route.path).first()
+})
+useSeoMeta({
+  title: page.value?.title,
+  description: page.value?.description,
+})
+defineOgImageComponent('NuxtSeo', {
+  title: page.value?.title,
+  description: page.value?.description,
 })
 </script>
 

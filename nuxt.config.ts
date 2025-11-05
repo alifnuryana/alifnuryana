@@ -10,10 +10,14 @@ export default defineNuxtConfig({
   site: {
     url: 'https://alifnuryana.pages.dev',
     name: 'Alif Nuryana',
-    description: 'Personal Website of Alif Nuryana 🤙',
+    description: 'Personal blog and portfolio of Alif Nuryana',
     lang: 'id',
   },
   content: {
+    database: {
+      type: 'd1',
+      bindingName: 'DB',
+    },
     experimental: {
       sqliteConnector: 'native',
     },

@@ -11,6 +11,7 @@
     "prepare": "husky"
   },
   "dependencies": {
+    "@iconify-json/logos": "^1.2.10",
     "@nuxt/content": "3.8.0",
     "@nuxt/ui": "4.1.0",
     "@nuxtjs/i18n": "10.2.0",

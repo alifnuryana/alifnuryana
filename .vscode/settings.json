@@ -9,9 +9,9 @@
     "**/.hg": true,
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
-    "**/node_modules": true,
     "**/.nuxt": true,
-    "**/.wrangler": true
+    "**/.wrangler": true,
+    "**/node_modules": true
   },
   "files.associations": {
     "*.css": "tailwindcss"

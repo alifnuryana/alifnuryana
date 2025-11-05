@@ -1,0 +1,13 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "alifnuryana",
+  "compatibility_date": "2025-07-15",
+  "compatibility_flags": ["nodejs_compat"],
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "alifnuryana",
+      "database_id": "2e1947a0-a77a-4299-85c5-d7a8ac647d12",
+    },
+  ],
+}
