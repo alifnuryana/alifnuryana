@@ -1,6 +1,10 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  modules: ['@nuxt/eslint', '@nuxt/ui', '@nuxtjs/seo'],
+  modules: [
+    '@nuxt/eslint',
+    '@nuxt/ui',
+    '@nuxtjs/seo',
+    '@nuxt/content',
+  ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   site: {
@@ -8,6 +12,11 @@ export default defineNuxtConfig({
     name: 'Alif Nuryana',
     description: 'Personal Website of Alif Nuryana 🤙',
     lang: 'id',
+  },
+  content: {
+    experimental: {
+      sqliteConnector: 'native',
+    },
   },
   compatibilityDate: '2025-07-15',
   nitro: {
