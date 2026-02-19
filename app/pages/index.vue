@@ -40,13 +40,13 @@
       </div>
       <div class="grid lg:grid-cols-2 gap-4">
         <PostCard
-          to="/posts/hello-world"
+          to="/blog/hello-world"
           title="Hello World"
           teaser="This is a dummy post to test the layout and styles."
           icon="/writing.png"
         />
         <PostCard
-          to="/posts/second-post"
+          to="/blog/second-post"
           title="Second Post"
           teaser="Another post to see how the grid looks with multiple items."
           icon="/bubble.png"

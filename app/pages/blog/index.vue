@@ -9,13 +9,13 @@
     </h1>
     <div class="grid gap-6">
       <PostCard
-        to="/posts/hello-world"
+        to="/blog/hello-world"
         title="Hello World"
         teaser="This is the first dummy post in the collection."
         icon="/writing.png"
       />
       <PostCard
-        to="/posts/second-post"
+        to="/blog/second-post"
         title="Second Post"
         teaser="Testing how the list looks with more than one item."
         icon="/bubble.png"

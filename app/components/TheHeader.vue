@@ -14,15 +14,33 @@
           </li>
           <li>
             <NuxtLink
-              to="/posts"
+              to="/about"
               class="text-sm"
-            >posts</NuxtLink>
+            >about</NuxtLink>
           </li>
           <li>
             <NuxtLink
-              to="/me"
+              to="/use"
               class="text-sm"
-            >me</NuxtLink>
+            >use</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/blog"
+              class="text-sm"
+            >blog</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/project"
+              class="text-sm"
+            >project</NuxtLink>
+          </li>
+          <li>
+            <NuxtLink
+              to="/contact"
+              class="text-sm"
+            >contact</NuxtLink>
           </li>
         </ul>
       </nav>

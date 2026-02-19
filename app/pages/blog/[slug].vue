@@ -43,9 +43,9 @@
 
     <div class="mt-8">
       <NuxtLink
-        to="/posts"
+        to="/blog"
         class="underline"
-      >← Back to posts</NuxtLink>
+      >← Back to blog</NuxtLink>
     </div>
   </article>
 </template>
