@@ -2,7 +2,11 @@ import tailwindcss from '@tailwindcss/vite'
 
 export default defineNuxtConfig({
 
-  modules: ['nitro-cloudflare-dev', '@nuxt/eslint'],
+  modules: [
+    'nitro-cloudflare-dev',
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+  ],
   devtools: { enabled: true },
 
   css: ['./app/assets/css/tailwind.css'],
