@@ -1,220 +1,172 @@
 @import "tailwindcss";
 
 @theme {
+  --color-terminal-green: #00ff41;
+  --color-terminal-green-dim: #003b00;
+  --color-terminal-amber: #ffb000;
+  --color-terminal-bg: #0d0d0d;
   --color-pink-300: #f9a8d4;
 }
 
 html {
-  background-color: #111111;
+  background-color: var(--color-terminal-bg);
 }
 
 body {
-  color: #ffffff;
-  font-family: 'Fira Code', monospace;
-  line-height: 2.0;
+  color: var(--color-terminal-green);
+  font-family: 'Fira Code', 'Courier New', monospace;
+  line-height: 1.6;
   margin: 0;
   max-width: none;
-  font-size: 14px;
+  font-size: 16px;
+  background-color: var(--color-terminal-bg);
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
 }
 
 header {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid var(--color-terminal-green-dim);
 }
 
 footer {
-  margin-top: 1rem;
+  margin-top: 2rem;
+  border-top: 1px solid var(--color-terminal-green-dim);
 }
 
 a {
-  color: #ffffff;
-  text-decoration: none;
+  color: var(--color-terminal-green);
+  text-decoration: underline;
   transition: all 0.3s ease;
 }
 
-a:hover:not(.block):not(.not-prose) {
-  color: #f9a8d4;
-}
-
-p a,
-li a:not(nav a),
-article a:not(.block) {
-  text-decoration: underline;
-}
-
-a.block,
-a.not-prose {
+a:hover {
+  background-color: var(--color-terminal-green);
+  color: var(--color-terminal-bg);
   text-decoration: none;
 }
 
-a.block:hover,
-a.not-prose:hover {
-  color: inherit;
-}
-
 p {
+  margin-bottom: 1.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-terminal-amber);
+  font-weight: bold;
   margin-bottom: 1rem;
+  text-shadow: 0 0 8px rgba(255, 176, 0, 0.4);
 }
 
-blockquote {
-  border-left: 2px solid #ffffff;
-  padding-left: 1.5rem;
-  margin-left: 0;
-  margin-bottom: 1rem;
-  font-style: italic;
-  color: #ffffff;
+h1 { font-size: 2rem; border-bottom: 2px solid var(--color-terminal-amber); display: inline-block; margin-bottom: 2rem; }
+h2 { font-size: 1.5rem; margin-top: 2rem; }
+h3 { font-size: 1.25rem; }
+
+/* CRT Effects */
+.crt-screen {
+  position: relative;
+  overflow: hidden;
 }
 
-h1 {
-  font-size: 28px;
-  font-weight: bold;
-  color: #ffffff;
+.crt-screen::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.06), rgba(0, 255, 0, 0.02), rgba(0, 0, 255, 0.06));
+  z-index: 100;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
 }
 
-h2 {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-bottom: 0.5rem;
-  margin-top: 0.5rem;
+.crt-screen::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(18, 16, 16, 0.1);
+  opacity: 0;
+  z-index: 101;
+  pointer-events: none;
+  animation: flicker 0.15s infinite;
 }
 
-.flex-1 h2,
-.flex-1 h3,
-.flex-1 h4,
-.flex-1 h5,
-.flex-1 h6 {
-  margin-top: 1.5rem;
+@keyframes flicker {
+  0% { opacity: 0.27861; }
+  5% { opacity: 0.34769; }
+  10% { opacity: 0.23604; }
+  15% { opacity: 0.90626; }
+  20% { opacity: 0.18128; }
+  25% { opacity: 0.83891; }
+  30% { opacity: 0.65583; }
+  35% { opacity: 0.57807; }
+  40% { opacity: 0.26559; }
+  45% { opacity: 0.84693; }
+  50% { opacity: 0.96019; }
+  55% { opacity: 0.08523; }
+  60% { opacity: 0.71056; }
+  65% { opacity: 0.73437; }
+  70% { opacity: 0.8523; }
+  75% { opacity: 0.11894; }
+  80% { opacity: 0.44301; }
+  85% { opacity: 0.14414; }
+  90% { opacity: 0.4419; }
+  95% { opacity: 0.42318; }
+  100% { opacity: 0.26338; }
 }
 
-h3 {
-  font-size: 16px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.scanline {
+  width: 100%;
+  height: 100px;
+  z-index: 102;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.2) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.1;
+  position: absolute;
+  bottom: 100%;
+  pointer-events: none;
+  animation: scanline 10s linear infinite;
 }
 
-h4 {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+@keyframes scanline {
+  0% { bottom: 100%; }
+  100% { bottom: -100px; }
 }
 
-h5 {
-  font-size: 12px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+.terminal-cursor {
+  display: inline-block;
+  width: 10px;
+  height: 1.2em;
+  background-color: var(--color-terminal-green);
+  vertical-align: middle;
+  margin-left: 5px;
+  animation: blink 1s step-end infinite;
 }
 
-h6 {
-  font-size: 10px;
-  font-weight: bold;
-  color: #ffffff;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
+@keyframes blink {
+  from, to { opacity: 1; }
+  50% { opacity: 0; }
 }
 
 hr {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  border: none;
-  border-top: 1px solid #333333;
-  background: none;
-}
-
-.toc-container {
-  position: sticky;
-  top: 2rem;
-  max-height: calc(100vh - 4rem);
-  overflow-y: auto;
-}
-
-@media (max-width: 768px) {
-  .toc-container {
-    display: none;
-  }
-}
-
-input[type="checkbox"] {
-  appearance: none;
-  width: 16px;
-  height: 16px;
-  background-image: url('/checkbox.png');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  margin-right: 4px;
-  vertical-align: middle;
-  cursor: pointer;
-}
-
-input[type="checkbox"]:checked {
-  background-image: url('/checked.png');
-}
-
-input[type="email"] {
-  color: #000000 !important;
+  border: 0;
+  border-top: 1px dashed var(--color-terminal-green-dim);
+  margin: 2rem 0;
 }
 
 ul {
   list-style: none;
-  padding-left: 1rem;
-  margin-bottom: 1rem;
-}
-
-ul li {
-  position: relative;
-  padding-left: 1.25rem;
+  padding-left: 0;
 }
 
 ul li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.7em;
-  width: 8px;
-  height: 8px;
-  background-image: url('/sparkle.png');
-  background-repeat: no-repeat;
-  background-size: contain;
+  content: "> ";
+  color: var(--color-terminal-amber);
 }
 
-/* hides sparkle bullets for checkbox lists */
-ul li:has(input[type="checkbox"]) {
-  padding-left: 0;
-}
-
-ul li:has(input[type="checkbox"])::before {
-  display: none;
-}
-
-ol {
-  list-style: decimal;
-  padding-left: 2.5rem;
-  margin-bottom: 1rem;
-}
-
-ol li {
-  position: relative;
-}
-
-nav ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-nav ul li::before {
-  display: none;
-}
-
-nav a {
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: #f9a8d4;
+.flex-1 h2, .flex-1 h3, .flex-1 h4 {
+  margin-top: 2rem;
 }

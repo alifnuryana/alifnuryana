@@ -1,17 +1,18 @@
 <template>
-  <div>
-    <h1>Projects</h1>
-    <p>
-      Here are some of the things I've been working on.
+  <div class="font-mono">
+    <h1 class="text-terminal-amber border-b-2 border-terminal-amber inline-block mb-8">
+      ./BIN/EXECUTABLES
+    </h1>
+    <p class="mb-8">
+      SCANNING REPOSITORIES FOR ACTIVE PROJECTS...
     </p>
 
-    <div class="grid lg:grid-cols-2 gap-4 mt-8">
-      <!-- Project cards will go here -->
+    <div class="grid lg:grid-cols-2 gap-4">
       <PostCard
         to="/"
-        title="Coming Soon"
-        teaser="I'm currently compiling my project list. Stay tuned!"
-        icon="/sparkle.png"
+        title="PROJ_COMING_SOON"
+        teaser="Compiling project metadata. Connection status: PENDING."
+        icon="loading"
       />
     </div>
   </div>

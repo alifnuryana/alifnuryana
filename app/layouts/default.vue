@@ -1,23 +1,11 @@
 <template>
-  <div>
-    <TheHeader />
-    <div class="flex justify-center">
-      <img
-        src="/border-home1.png"
-        alt="border-home1"
-      >
-    </div>
-    <main>
-      <div class="mx-auto w-full max-w-4xl px-4 py-6">
+  <div class="bg-terminal-bg min-h-screen text-terminal-green selection:bg-terminal-green selection:text-terminal-bg">
+    <TerminalWrapper>
+      <TheHeader />
+      <main class="py-4">
         <slot />
-      </div>
-    </main>
-    <div class="flex justify-center">
-      <img
-        src="/border-home1.png"
-        alt="border-home1"
-      >
-    </div>
-    <TheFooter />
+      </main>
+      <TheFooter />
+    </TerminalWrapper>
   </div>
 </template>

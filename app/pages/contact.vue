@@ -1,24 +1,35 @@
 <template>
-  <div>
-    <h1>Contact</h1>
-    <p>
-      Feel free to reach out to me!
+  <div class="font-mono">
+    <h1 class="text-terminal-amber border-b-2 border-terminal-amber inline-block mb-8">
+      ./COMMUNICATIONS/UPLINK
+    </h1>
+
+    <p class="mb-8">
+      READY FOR SECURE COMMUNICATION. SELECT PROTOCOL:
     </p>
 
-    <div class="mt-8 space-y-4">
+    <div class="space-y-4 border-l-2 border-terminal-green-dim pl-4">
       <p>
-        <strong>Email:</strong> <a href="mailto:alif@example.com">alif@example.com</a>
+        <span class="text-terminal-amber font-bold">PROTO_01 [SMTP]:</span>
+        <a
+          href="mailto:alif@example.com"
+          class="hover:bg-terminal-green hover:text-terminal-bg px-1"
+        >alif@example.com</a>
       </p>
       <p>
-        <strong>GitHub:</strong> <a
+        <span class="text-terminal-amber font-bold">PROTO_02 [GITHUB]:</span>
+        <a
           href="https://github.com/alifnuryana"
           target="_blank"
-        >github.com/alifnuryana</a>
+          class="hover:bg-terminal-green hover:text-terminal-bg px-1"
+        >alifnuryana</a>
       </p>
       <p>
-        <strong>Twitter/X:</strong> <a
+        <span class="text-terminal-amber font-bold">PROTO_03 [SOCIAL]:</span>
+        <a
           href="https://twitter.com/alifnuryana"
           target="_blank"
+          class="hover:bg-terminal-green hover:text-terminal-bg px-1"
         >@alifnuryana</a>
       </p>
     </div>

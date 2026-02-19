@@ -1,11 +1,9 @@
 <template>
-  <footer>
-    <p class="text-xs px-6 py-6">
-      Made with ୨ <a
-        href="https://github.com/danapixels/digio-theme"
-        target="_blank"
-        rel="noopener noreferrer"
-      >Digio</a> ୧ .
+  <footer class="pt-8 pb-4 border-t border-terminal-green-dim font-mono text-xs opacity-70">
+    <p>
+      &copy; {{ new Date().getFullYear() }} ALIF_NURYANA. ALL RIGHTS RESERVED.
+      <br>
+      SYSTEM_STATUS: OPERATIONAL | SECURITY_LEVEL: ALPHA
     </p>
   </footer>
 </template>
