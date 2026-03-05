@@ -1,13 +1,26 @@
 <script lang="ts" setup>
+const { data: page } = await useAsyncData('index', () => {
+  return queryCollection('pages').path('/').first()
+})
+
+if (!page.value) {
+  throw createError({
+    status: 404,
+    statusText: 'Page Not Found',
+  })
+}
+
 useSeoMeta({
-  title: 'Home - Alif Nuryana',
-  description: 'Welcome to my personal website! I am Alif Nuryana, a passionate software developer and technology enthusiast. Here, you can find my projects, blog posts, and contact information. Feel free to explore and connect with me!',
+  title: page.value.seo.title,
+  description: page.value.seo.description,
 })
 </script>
 
 <template>
   <div>
-    <h1>Under Construction!</h1>
-    <p>I'm working on this page. Please check back soon!</p>
+    <ContentRenderer
+      v-if="page"
+      :value="page"
+    />
   </div>
 </template>
