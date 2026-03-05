@@ -41,5 +41,5 @@
       "prepare-commit-msg": "exec < /dev/tty && npx cz --hook || true"
     }
   },
-  "version": "1.0.0"
+  "version": "1.1.0"
 }
