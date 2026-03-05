@@ -1,0 +1,21 @@
+{
+    "$schema": "./node_modules/wrangler/config-schema.json",
+    "d1_databases": [
+        {
+            "binding": "DB",
+            "database_name": "alifnuryana-dev",
+            "database_id": "ec7b8ba9-020c-48df-8329-b64dbc4d728d"
+        }
+    ],
+    "env": {
+        "production": {
+            "d1_databases": [
+                {
+                    "binding": "DB",
+                    "database_name": "alifnuryana",
+                    "database_id": "35b48ccf-81ab-4d72-bc73-a7d87d982254"
+                }
+            ]
+        }
+    }
+}
